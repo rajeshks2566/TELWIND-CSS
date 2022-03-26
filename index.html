@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Tailwind elements</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Elements CSS -->
+    <link rel="stylesheet" href="css/index.min.css" />
+    <!-- Custom styles -->
+    <style>
+body
+{
+  background-color: white;
+}
+.dark-mode
+{
+  background-color: black;
+  color: white;
+}
+    </style>
+  </head>
+
+  <body>
+    <!-- Start your project here-->
+        <!-- nav Bar -->
+
+        <section class="nav-sec border-0 fixed-top">
+          <article class="nav-art">
+            <section class="bg-gray-900">
+              <article class="ml-16 mr-16">
+                <marquee behavior="" direction=""><h1 class="text-white">New Batch and Timmings : <span class="text-orange-900 font-extrabold">MERN</span> - 20-03-2022 by <span class="mr-6">Harish Sir </span> <span class="text-orange-900 font-extrabold "> JAVA</span> - 17-03-2022 by <span class="">Abhinandan Sir</span><span class="text-orange-900 font-extrabold ml-6">MEAN</span> - 29-03-2022 by <span class="">Lakshmeesh Sir </span></h1></marquee>
+              </article>
+            </section>
+<nav class="relative w-full flex flex-wrap items-center justify-between py-3 bg-gray-900 text-gray-200 shadow-lg navbar navbar-expand-lg navbar-light">
+
+  <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+    <button
+      class="navbar-toggler text-gray-200 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent1"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        data-icon="bars"
+        class="w-6"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+      >
+        <path
+          fill="currentColor"
+          d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+        ></path>
+      </svg>
+    </button>
+    <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent1">
+      <a class="text-xl text-white pr-2 font-semibold" href="#">Home</a>
+      <!-- Left links -->
+      <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
+        <li class="nav-item p-2">
+          <a class="nav-link text-white" href="#home">About</a>
+        </li>
+        <li class="nav-item p-2">
+          <a
+            class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
+            href="#"
+            >Courses</a
+          >
+        </li>
+        <li class="nav-item p-2">
+          <a
+            class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
+            href="#"
+            >Placements</a>
+        </li>
+
+        <li class="nav-item p-2">
+          <a
+            class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
+            href="#"
+            >Trainers</a>
+        </li>
+
+        <li class="nav-item p-2">
+          <a
+            class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
+            href="#"
+            >Contact Us</a>
+        </li>
+
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    <!-- Right elements -->
+    <div class="flex items-center relative ">
+      <!-- Icon -->
+      <button onclick="dark()" class="mr-6">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+      </button>
+      <div class="dropdown relative">
+        <a
+          class="text-white  hover:opacity-80 focus:opacity-80 mr-4 dropdown-toggle hidden-arrow flex items-center border-2 p-1  rounded-md"
+          href="#"
+          id="dropdownMenuButton1"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Login</a>
+        <ul
+          class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none left-auto right-0"
+          aria-labelledby="dropdownMenuButton1"
+        >
+          <li>
+            <a
+              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+              href="./login.html"
+              >Admin Login</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+              href="./login.html"
+              >Student Login</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+              href="./login.html"
+              >Sign as Guest</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown relative">
+        <a
+          class="dropdown-toggle flex items-center  hidden-arrow border-2 p-1 rounded-md"
+          href="#"
+          id="dropdownMenuButton2"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false">
+        Register
+        </a>
+        <ul
+          class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none left-auto right-0"
+          aria-labelledby="dropdownMenuButton2"
+        >
+          <li>
+            <a
+              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+              href="./reg.html" target=""
+              > Indian</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+              href="./reg.html" target="_blank"
+              >International</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Right elements -->
+  </div>
+</nav>
+
+
+            </article>
+      </section>
+
+      <!-- Home page --> 
+
+      <section class="home-sec" >
+        <article class="home-art ">
+          <div class=" bg-[url('https://cdn.pixabay.com/photo/2019/07/29/04/35/student-4369850_1280.jpg')] bg-cover bg-center h-screen bg-no-repeat opacity-80"></div>
+            <div class="absolute top-60   home-div  ml-[450px]" >
+              <h1 class="home-h1 text-white text-7xl ml-[320px] text-right">Welcome to<br><span class="text-orange-500 font-medium">LTPT Academy</span> </h1><br>
+          <h2 class="text-white  text-2xl text-right"><span>An Investment in Knowledge pays the best Intrest</span></h2>
+
+          </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Abous Us Starts -->
+      <div class="about-h1" id="home"><h1 class="flex justify-center mt-8 mb-8  text-5xl">About&nbsp;<span class="text-orange-500">LTPT Academy..</span></h1>
+      </div>
+      <section class="about-sec w-[100%] flex justify-center" >
+        <article class="about-art flex justify-center w-[90%]">
+          <div class="about-div flex">
+            <div class="w-[100%]">
+              <img src="https://media.istockphoto.com/photos/inside-the-library-of-the-university-of-leuven-belgium-picture-id495985910?k=20&m=495985910&s=612x612&w=0&h=3cJl5Z5EaBo7ZxVJ3cpNrfchcIsJO8NxOBQykpagtzU=" alt="" class="rounded-[80px]">
+            </div>
+            <div class="w-[100%] m-6">
+              <h1 class="text-center text-2xl text-orange-900 mb-6 ">LARGEST&nbsp;<span class="text-orange-500 mb-3">MERN STACK</span>&nbsp;LEARNING PLATFORM</h1>
+              <p class="mb-4">🤝 LTBT is the world’s ace software testing training organization with an aim to bridge the gap between the demands of the industry and the curriculum of educational institutions.🤝</p>
+              <p>With centers across the Globe, the institute is a platform where young minds are given the opportunity to build successful careers.</p>
+              <p class="mt-4 text-2xl text-orange-900"><span class="text-orange-600">LTBT</span> is a place where businesses find talent and dreams take flight.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Offline Cources Offered -->
+      <section class="course-sec mt-12 mb-12">
+        <div class="text-center mt-4 mb-5 bg-gradient-to-r from-blue-500 to-red-300 ">
+          <h1 class="font-bold text-3xl">Offline Courses</h1>
+        </div>
+        <article class="course-art">
+          <div class="course-div1 flex">
+            <!-- Courses first div -->
+            <div class="m-4 shadow-2xl">
+              <figure>
+                <img src="data:image/jpeg;base64,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" alt="" class="w-72 h-32">
+                <figcaption class="text-center font-bold bg-gradient-to-r from-blue-200 to-white">JAVA FULL STACK</figcaption>
+              </figure>
+            </div>
+            <div class="m-4 shadow-2xl">
+              <figure>
+                <img src="data:image/png;base64,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" alt="" class="w-72 h-32">
+                <figcaption class="text-center font-bold bg-gradient-to-r from-blue-900 to-white">PYTHON FULL STACK</figcaption>
+              </figure>
+            </div>
+            <div class="m-4 shadow-2xl">
+              <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7w3Lr7t8wDtYvP62MVGzew9amM5HMqQ6MDQ&usqp=CAU" alt="" class="w-72 h-32">
+                <figcaption class="text-center font-bold bg-gradient-to-r from-orange-500 to-white">MERN STACK</figcaption>
+              </figure>
+            </div>
+            <div class="m-4 shadow-2xl">
+              <figure>
+                <img src="data:image/png;base64,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" alt="" class="w-72 h-32">
+                <figcaption class="text-center font-bold bg-gradient-to-r from-green-300 to-white">MEAN STACK</figcaption>
+              </figure>
+            </div>
+          </div>
+<!-- courses second div -->
+          <div class="course-div2 flex mt-10">
+
+            <div class="m-4 shadow-2xl">
+              <figure>
+                <img src="data:image/png;base64,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" alt="" class="w-72 h-32 rounded-t-lg">
+                <figcaption class="text-center font-bold text-green-800">ANDROID DEVELOPMENT</figcaption>
+              </figure>
+            </div>
+            <div class="m-4 shadow-2xl">
+              <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC-MfNaY_f5M7vgAY3CNkMlJwTyIOW46JUqA&usqp=CAU" alt="" class="w-72 h-32 rounded-t-lg">
+                <figcaption class="text-center font-bold text-blue-900">BIG DATA HADOOP</figcaption>
+              </figure>
+            </div>
+            <div class="m-4 shadow-2xl">
+              <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlllq_vPhznbkOLncbL9unyJtNK0w-J5Dqdg&usqp=CAU" alt="" class="w-72 h-32 rounded-t-lg">                
+                <figcaption class="text-center font-bold text-orange-600">J2EE</figcaption>
+              </figure>
+            </div>
+            <div class="m-4 shadow-2xl">
+              <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKhgip2PYyT8OU6GcU2_yY7bR5A6ptnset5w&usqp=CAU" alt="" class="w-72 h-32 rounded-t-lg">                
+                <figcaption class="text-center font-bold text-green-700">C,C++ PROGRAMMING</figcaption>
+              </figure>
+            </div>
+          </div>
+
+        </article>
+      </section>
+
+
+      <!-- Online courses -->
+      <section class="online-sec mb-20">
+        <div class="text-center mt-4 mb-5 bg-gradient-to-r from-red-700 to-white">
+          <h1 class="font-bold text-3xl">Online Courses</h1>
+        </div>
+        <article class="online-art">
+          <div class="online-div flex justify-evenly">
+
+            <div class=" border-2  w-[30%]  border-blue-100 shadow-2xl">
+              <h1 class="bg-blue-100 text-center font-bold mb-3 text-orange-400">Software Testing</h1>
+              <p class="">Software testing course is more of job oriented training which is designed as per current industry standards. You can start IT industry with basic and advance skills. Course will be trained by top industry experts.</p>
+              <div class="flex justify-evenly mt-10">
+                <a href="" class="border-2 p-1 rounded-lg bg-blue-500 border-blue-900 text-white font-bold hover:bg-blue-300 hover:text-black  ">Know more👇</a>
+                <a href="" class="border-2 p-1 rounded-lg bg-orange-400 text-white font-bold border-orange-900 hover:bg-orange-300 hover:text-black">👉 Enroll</a>
+                <a href="" class="flex p-1 border-2 font-bold rounded-lg bg-green-600 border-green-900 text-white hover:bg-green-300 hover:text-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Brochure
+                </a>  
+              </div>
+            </div>
+
+            <div class=" border-2 w-[30%] border-blue-100 shadow-2xl">
+              <h1 class="bg-blue-100 text-center text-orange-400 font-bold mb-3">API Testing</h1>
+              <p class="">API testing course designed for those who are interested in API testing and want to learn more about middle ware testing. This also gives different types of testing methodologies with respect to API testing with different types of API’s.</p>
+              <div class="flex justify-evenly mt-10">
+                <a href="" class="border-2 p-1 rounded-lg bg-blue-500 border-blue-900 text-white font-bold hover:bg-blue-300 hover:text-black  ">Know more👇</a>
+                <a href="" class="border-2 p-1 rounded-lg bg-orange-400 text-white font-bold border-orange-900 hover:bg-orange-300 hover:text-black">👉 Enroll</a>
+                <a href="" class="flex p-1 border-2 font-bold rounded-lg bg-green-600 border-green-900 text-white hover:bg-green-300 hover:text-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Brochure
+                </a>  
+              </div>
+            </div>
+            
+
+            <div class=" border-2 w-[30%] border-blue-100 shadow-2xl">
+              <h1 class="bg-blue-100 text-center text-orange-400 font-bold mb-3">Python Selenium</h1>
+              <p class="">This course is designed for all manual testers who wants to upgrade their skills to automation. Course will be trained by top industry experts who have passion to train students and help then upgrade their skills level.</p>
+              <div class="flex justify-evenly mt-10">
+                <a href="" class="border-2 p-1 rounded-lg bg-blue-500 border-blue-900 text-white font-bold hover:bg-blue-300 hover:text-black  ">Know more👇</a>
+                <a href="" class="border-2 p-1 rounded-lg bg-orange-400 text-white font-bold border-orange-900 hover:bg-orange-300 hover:text-black">👉 Enroll</a>
+                <a href="" class="flex p-1 border-2 font-bold rounded-lg bg-green-600 border-green-900 text-white hover:bg-green-300 hover:text-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Brochure
+                </a>  
+              </div>
+            </div>
+            
+            
+          </div>
+        </article>
+      </section>
+
+      <!-- Placement section -->
+      <section>
+        <div class="mb-5">
+          <h1 class="text-center font-bold text-4xl mb-5"><span class="text-orange-400">LTPT</span> Academy,Bangalore Placements</h1>
+          <p class="w-[80%] ml-[130px] text-center text-2xl">The Academy offers placements under all streams. The Department of Training and Placements is responsible for conducting placement drives for the students. Some of the top recruiters who participated in <span class="text-orange-400">LTPT</span> Academy, Bangalore placements are Wipro, Reliance, Asian Paints, Berger, among others. Candidates can check the <span class="text-orange-400">LTPT</span> Academy placements 2021 highlights in the following table:</p>
+        </div>
+        <article class="flex justify-center">
+          <!-- placement main div -->
+          <div class="w-[80%] border-2 flex justify-center">
+            <!-- placement div1 -->
+            <div class="w-[100%] border-r-2">
+              <h1 class="text-center bg-blue-900 text-white font-bold">Particulars</h1>
+              <ul>
+                <li  class="m-2 border-b-2">Placement Records</li>
+                <li  class="m-2 border-b-2">Average Salary</li>
+                <li  class="m-2 border-b-2">Highest Salary</li>
+                <li  class="m-2 ">No. of Recuters visited</li>
+              </ul>
+            </div>
+
+            <!-- placement div2 -->
+            <div class="w-[100%]">
+              <h1 class="text-center bg-blue-900 text-white font-bold">Statistics</h1>
+              <ul>
+                <li class="m-2 border-b-2">Around 90%</li>
+                <li class="m-2 border-b-2">INR 3.50 LPA</li>
+                <li  class="m-2 border-b-2">INR 12.50 LPA</li>
+                <li  class="m-2">250+</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Trainers Section -->
+      <section class="trainer-sec mt-12">
+    <div class="text-center">
+      <h1 class="font-bold text-6xl text-blue-900 mb-5">Trainers</h1>
+    </div>
+<!-- java trainers -->
+
+  <div class=" w-[90%] flex justify-center m-auto ">
+  <details class="">
+        <summary class="text-center w-[100%] border-2" style="list-style-type: none;"><h1 class="flex justify-center text-3xl  font-bold bg-gradient-to-r from-blue-200 to-white">JAVA Trainers List 
+          <span class="ml-60 mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+            </svg>
+      </span>
+    </h1>
+  </summary>
+<!-- trainers div -->
+
+      <div class="flex">
+       <div class="m-2">
+        <summary style="list-style-type: none;">
+            <figure>
+              <img src="https://wallpaperset.com/w/full/4/8/9/97348.jpg" alt="" class="w-[1000px] h-[180px] rounded-lg">
+              <figcaption class="text-center font-bold">
+                <h1 class="font-bold text-blue-900">Mr.Dwayane Johnson</h1><br>
+                <ul>
+                  <li><span class="text-orange-400">JAVA</span> Full Stack Trainer</li>
+                  <li>12 Years of Experience</li>
+                </ul>
+              </figcaption>
+            </figure>
+        </summary>
+        </div>
+
+        <div class="m-2">
+          <summary style="list-style-type: none;">
+              <figure>
+                <img src="https://media.gettyimages.com/photos/champion-brock-lesnar-speaks-during-a-wwe-news-conference-at-tmobile-picture-id1180503685?k=20&m=1180503685&s=612x612&w=0&h=_cACGZLOoq5Eo0FM0x50luwDYgiH0V7govC355lm3-g=" alt="" class="w-[1000px] h-[180px] rounded-lg">
+                <figcaption class="font-bold text-center">
+                  <h1 class="font-bold text-blue-900">Mr.Brock Lesnar</h1><br>
+                  <ul>
+                    <li><span class="text-orange-400">CORE JAVA </span>Trainer</li>
+                    <li>5 Years of Experience</li>
+                  </ul>
+                </figcaption>
+              </figure>
+          </summary>
+          </div>
+
+          <div class="m-2">
+            <summary style="list-style-type: none;">
+                <figure>
+                  <img src="https://www.teahub.io/photos/full/160-1601450_john-cena-s-latest-post-featuring-this-bollywood.jpg" alt="" class="w-[1000px] h-[180px] rounded-lg">
+                  <figcaption class="font-bold text-center">
+                    <h1 class="font-bold text-blue-900">Mr.John Cena</h1><br>
+                  <ul>
+                    <li><span class="text-orange-400">SQL </span>Trainer</li>
+                    <li>7 Years of Experience</li>
+                  </ul>
+                  </figcaption>
+                </figure>
+            </summary>
+            </div>
+
+          
+     
+        <div class="m-2">
+          <summary style="list-style-type: none;">
+              <figure>
+                <img src="https://www.muscleandfitness.com/wp-content/uploads/2020/03/WWE-Superstar-Wrestler-Roman-Reign-Resting.jpg?w=1109&h=614&crop=1&quality=86&strip=all" alt="" class="w-[1000px] h-[180px] rounded-lg">
+                <figcaption class="font-bold text-center">
+                  <h1 class="font-bold text-blue-900">Mr.Roman</h1><br>
+                  <ul>
+                    <li><span class="text-orange-400">J2EE </span>Trainer</li>
+                    <li>11 Years of Experience</li>
+                  </ul>
+                </figcaption>
+              </figure>
+          </summary>
+          </div>
+
+          <div class="m-2">
+            <summary style="list-style-type: none;">
+                <figure>
+                  <img src="https://tse3.mm.bing.net/th?id=OIP.Z-OxtebINlxiOb9o8qtijAHaEK&pid=Api&P=0&w=310&h=174" alt="" class="w-[1000px] h-[180px] rounded-lg">
+                  <figcaption class="font-bold text-center">
+                    <h1 class="font-bold text-blue-900">Mr.Batista</h1><br>
+                    <ul>
+                      <li><span class="text-orange-400">Aptitude </span>Trainer</li>
+                      <li>17 Years of Experience</li>
+                    </ul>
+                  </figcaption>
+                </figure>
+            </summary>
+            </div>
+
+        </div>
+      </details>
+  </div>
+  <br>
+
+  <!-- JS Trainers List -->
+
+  <div class=" w-[90%] flex justify-center m-auto ">
+    <details class="">
+          <summary class="text-center w-[100%] border-2" style="list-style-type: none;"><h1 class="flex justify-center text-3xl  font-bold bg-gradient-to-r from-blue-200 to-white">JAVA SCRIPT Trainers List 
+            <span class="ml-60 mt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
+        </span>
+      </h1>
+    </summary>
+  <!-- trainers div -->
+  
+        <div class="flex">
+         <div class="m-2">
+          <summary style="list-style-type: none;">
+              <figure>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.RfncEVIWXgspXzJgggfH7wHaE7&pid=Api&P=0&w=246&h=164" alt="" class="w-[1000px] h-[180px] rounded-lg">
+                <figcaption class="text-center font-bold">
+                  <h1 class="font-bold text-blue-900">Mr.Berners Lee</h1><br>
+                  <ul>
+                    <li><span class="text-orange-400">HTML and CSS</span> Trainer</li>
+                    <li>22 Years of Experience</li>
+                  </ul>
+                </figcaption>
+              </figure>
+          </summary>
+          </div>
+  
+          <div class="m-2">
+            <summary style="list-style-type: none;">
+                <figure>
+                  <img src="https://s.yimg.com/fz/api/res/1.2/54USda85GNaOejkoEg9taw--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI2MDtxPTgwO3c9MjYw/https://s.yimg.com/zb/imgv1/defc4c3c-6a39-3521-beb6-ba3baffcce2a/t_500x300" alt="" class="w-[1000px] h-[180px] rounded-lg">
+                  <figcaption class="font-bold text-center">
+                    <h1 class="font-bold text-blue-900">Mr.Brendan Eich</h1><br>
+                    <ul>
+                      <li><span class="text-orange-400">JAVA SCRIPT </span>Trainer</li>
+                      <li>28 Years of Experience</li>
+                    </ul>
+                  </figcaption>
+                </figure>
+            </summary>
+            </div>
+  
+            <div class="m-2">
+              <summary style="list-style-type: none;">
+                  <figure>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.L24xl10Izm77k7tGyGY3twAAAA&pid=Api&P=0&w=168&h=168" alt="" class="w-[1000px] h-[180px] rounded-lg">
+                    <figcaption class="font-bold text-center">
+                      <h1 class="font-bold text-blue-900">Mr.Jordan Walke</h1><br>
+                    <ul>
+                      <li><span class="text-orange-400">SQL </span>Trainer</li>
+                      <li>17 Years of Experience</li>
+                    </ul>
+                    </figcaption>
+                  </figure>
+              </summary>
+              </div>
+  
+            
+       
+          <div class="m-2">
+            <summary style="list-style-type: none;">
+                <figure>
+                  <img src="https://tse3.mm.bing.net/th?id=OIP.2p2Mwx6QIAOM4UJkiTYuHwHaDp&pid=Api&P=0&w=376&h=185" alt="" class="w-[1000px] h-[180px] rounded-lg">
+                  <figcaption class="font-bold text-center">
+                    <h1 class="font-bold text-blue-900">Mr.Dwight Merriman</h1><br>
+                    <ul>
+                      <li><span class="text-orange-400">Mongo DB </span>Trainer</li>
+                      <li>19 Years of Experience</li>
+                    </ul>
+                  </figcaption>
+                </figure>
+            </summary>
+            </div>
+  
+            <div class="m-2">
+              <summary style="list-style-type: none;">
+                  <figure>
+                    <img src="https://s.yimg.com/fz/api/res/1.2/LxWoXneCGZVFWwL1seVuHg--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI2MDtxPTgwO3c9MjU4/https://s.yimg.com/zb/imgv1/206e09f4-9fb7-3f52-9df4-6366f33e87be/t_500x300" alt="" class="w-[1000px] h-[180px] rounded-lg">
+                    <figcaption class="font-bold text-center">
+                      <h1 class="font-bold text-blue-900">Mr.James Gosling</h1><br>
+                      <ul>
+                        <li><span class="text-orange-400">Java </span>Trainer</li>
+                        <li>17 Years of Experience</li>
+                      </ul>
+                    </figcaption>
+                  </figure>
+              </summary>
+              </div>
+  
+          </div>
+        </details>
+    </div>
+    <br>
+  
+    
+    <!-- Full Stack -->
+
+    <div class=" w-[90%] flex justify-center m-auto ">
+      <details class="">
+            <summary class="text-center w-[100%] border-2" style="list-style-type: none;"><h1 class="flex justify-center text-3xl  font-bold bg-gradient-to-r from-blue-200 to-white">FULL STACK DEVELOPMENT Trainers List 
+              <span class="ml-60 mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                </svg>
+          </span>
+        </h1>
+      </summary>
+    <!-- trainers div -->
+    
+          <div class="flex">
+           <div class="m-2">
+            <summary style="list-style-type: none;">
+                <figure>
+                  <img src="https://asperbrothers.com/wp-content/uploads/2021/05/Evan-You-Vue-e1620636570983-1024x892.jpg" alt="" class="w-[1000px] h-[180px] rounded-lg">
+                  <figcaption class="text-center font-bold">
+                    <h1 class="font-bold text-blue-900">Mr.Evan You</h1><br>
+                    <ul>
+                      <li><span class="text-orange-400">PHP</span> Full Stack Trainer</li>
+                      <li>19 Years of Experience</li>
+                    </ul>
+                  </figcaption>
+                </figure>
+            </summary>
+            </div>
+    
+            <div class="m-2">
+              <summary style="list-style-type: none;">
+                  <figure>
+                    <img src="https://asperbrothers.com/wp-content/uploads/2021/05/Guido-van-Rossum-Python-e1620309213856-300x270.jpg" alt="" class="w-[1000px] h-[180px] rounded-lg">
+                    <figcaption class="font-bold text-center">
+                      <h1 class="font-bold text-blue-900">Mr.Guido van Rossum</h1><br>
+                      <ul>
+                        <li><span class="text-orange-400">PYTHON </span>FULL STACK</li>
+                        <li>25 Years of Experience</li>
+                      </ul>
+                    </figcaption>
+                  </figure>
+              </summary>
+              </div>
+    
+              <div class="m-2">
+                <summary style="list-style-type: none;">
+                    <figure>
+                      <img src="https://asperbrothers.com/wp-content/uploads/2021/05/Matt-Mullenweg-wordpress-368x368.jpg" alt="" class="w-[1000px] h-[180px] rounded-lg">
+                      <figcaption class="font-bold text-center">
+                        <h1 class="font-bold text-blue-900">Mr.Matthew Mullenweg</h1><br>
+                      <ul>
+                        <li><span class="text-orange-400">WORDPRESS </span> Trainer</li>
+                        <li>7 Years of Experience</li>
+                      </ul>
+                      </figcaption>
+                    </figure>
+                </summary>
+                </div>
+    
+              
+         
+            <div class="m-2">
+              <summary style="list-style-type: none;">
+                  <figure>
+                    <img src="https://asperbrothers.com/wp-content/uploads/2021/05/Jordan-Walke-React-300x168.png" alt="" class="w-[1000px] h-[180px] rounded-lg">
+                    <figcaption class="font-bold text-center">
+                      <h1 class="font-bold text-blue-900">Mr.Jordan Walke</h1><br>
+                      <ul>
+                        <li><span class="text-orange-400">REACT </span>FULL STACK Trainer</li>
+                        <li>29 Years of Experience</li>
+                      </ul>
+                    </figcaption>
+                  </figure>
+              </summary>
+              </div>
+    
+              <div class="m-2">
+                <summary style="list-style-type: none;">
+                    <figure>
+                      <img src="https://asperbrothers.com/wp-content/uploads/2021/05/Rasmus-Lerdorf-PHP-368x368.jpg" alt="" class="w-[1000px] h-[180px] rounded-lg">
+                      <figcaption class="font-bold text-center">
+                        <h1 class="font-bold text-blue-900">Mr.Rasmus Lerdorf</h1><br>
+                        <ul>
+                          <li><span class="text-orange-400">PHP </span>Full Stack Trainer</li>
+                          <li>17 Years of Experience</li>
+                        </ul>
+                      </figcaption>
+                    </figure>
+                </summary>
+                </div>
+    
+            </div>
+          </details>
+      </div>
+    
+      </section>
+
+      <!-- Infrastructure Facilities -->
+      <section class="mt-10">
+        <div class="text-4xl text-center mb-5">
+          <h1><span class="text-orange-400 font-bold">LTPT</span> Infrastructure/Facilities</h1>
+        </div>
+        <article>
+            <div class="flex justify-evenly">
+              <img src="./library.png" alt="">
+              <img src="./wifi.png" alt="">
+              <img src="./hosp.png" alt="">
+              <img src="./cafe.png" alt="">
+              <img src="./ac.png" alt="">
+            </div>
+        </article>
+      </section>
+
+      <!-- Approval Section -->
+      <section class="mt-10">
+        <h1 class="text-center font-bold text-4xl mb-6 text-green-900">Approvals & Accreditations</h1>
+        <article>
+          <div class="flex justify-evenly">
+
+            <figure>
+              <img src="https://www.presidency.allschoolscolleges.com/assets/CMR%2520Assects-31.svg" alt="" class="w-[200px]">
+              <figcaption class="text-center">Approved By <br> <span class="text-orange-500 font-bold">NAAC</span></figcaption>
+            </figure>
+
+            <figure>
+              <img src="https://tse1.mm.bing.net/th?id=OIP.RAllQH6MIORdcFgNcYwTQwHaHa&pid=Api&P=0&w=153&h=153" alt="" class="w-[200px]">
+              <figcaption class="text-center">Approved by GOVT of<br><span class="text-orange-500 font-bold">Karnataka</span></figcaption>
+            </figure>
+
+            <figure>
+              <img src="https://tse3.mm.bing.net/th?id=OIP._i9WHAa7Qbaing1uyLqCqwHaHa&pid=Api&P=0&w=156&h=156" alt="" class="w-[200px]">
+                <figcaption class="text-center">Approved by GOVT of<br><span class="text-orange-500 font-bold">INDIA</span></figcaption>
+            </figure>
+          </div>
+        </article>
+      </section>
+      
+
+      <!-- Recruiters -->
+      <section class="mt-12">
+        <div class="border-b-2 lg:border-dashed border-black w-[80%] m-auto">
+          <h1 class="text-center font-bold text-4xl">Recruiters</h1><br>
+        </div><br>
+        <article>
+          <div>
+            <div class="flex justify-evenly">
+              <img src="https://tse3.mm.bing.net/th?id=OIP.UAkrj9mubrCrt_x9Uzf4NwHaEK&pid=Api&P=0&w=294&h=165" alt="" class="w-[200px] border-2 border-cyan-700">
+              <img src="https://tse3.explicit.bing.net/th?id=OIP.bN5MH5e96LBoQ_Qg6FyE2QHaD4&pid=Api&P=0&w=325&h=170" alt="" class="w-[200px] border-2 border-cyan-700">
+              <img src="https://tse4.mm.bing.net/th?id=OIP.tzWBce8-FYSwTVETcYdeDAHaEg&pid=Api&P=0&w=294&h=179" alt="" class="w-[200px] border-2 border-cyan-700">
+              <img src="https://tse1.mm.bing.net/th?id=OIP.vzKVud4E_ZCsHSvWIke10QHaEK&pid=Api&P=0&w=290&h=163" alt="" class="w-[200px] border-2 border-cyan-700">
+              <img src="https://tse4.mm.bing.net/th?id=OIP.rHslqcMKopiNCdNWMxvqGgAAAA&pid=Api&P=0&w=308&h=91" alt="" class="w-[200px] border-2 border-cyan-700">
+              <img src="https://tse3.explicit.bing.net/th?id=OIP.a3MkTrZLPDmir4t7ftTcGAHaBG&pid=Api&P=0&w=509&h=75" alt="" class="w-[200px] border-2 border-cyan-700">
+
+            </div><br>
+
+            <div class="flex justify-evenly">
+              <img src="https://tse1.mm.bing.net/th?id=OIP.iGeat9T2P2gTvwIfN67SbQHaCW&pid=Api&P=0&w=480&h=152" alt="" class="w-[200px] border-2 border-cyan-700 h-32" >
+              <img src="https://tse4.mm.bing.net/th?id=OIP.LLkYrjHTR_51vD6RlcVQ6QHaFj&pid=Api&P=0&w=249&h=187" alt="" class="w-[200px] border-2 border-cyan-700 h-32" >
+              <img src="https://tse2.mm.bing.net/th?id=OIP.yRnnla2b-bizIV7TAgjgwAHaDe&pid=Api&P=0&w=298&h=140" alt="" class="w-[200px] border-2 border-cyan-700 h-32" >
+              <img src="https://tse4.explicit.bing.net/th?id=OIP.6SXWo58_zYu0XmjfCOOgYAHaEK&pid=Api&P=0&w=277&h=156" alt="" class="w-[200px] border-2 border-cyan-700 h-32" >
+              <img src="https://tse4.mm.bing.net/th?id=OIP.-1Anoa20znTeXW2gqo5zigAAAA&pid=Api&P=0&w=167&h=167" alt="" class="w-[200px] border-2 border-cyan-700 h-32" >
+              <img alt="" src="https://tse3.mm.bing.net/th?id=OIP.RuDE3ileSX4qRZORyCpy8AHaE8&pid=Api&P=0&w=246&h=164" class="w-[200px] border-2 border-cyan-700 h-32" >
+
+            </div><br>
+
+            <div class="flex justify-evenly">
+              <img src="https://tse3.mm.bing.net/th?id=OIP.gN0AtFFJxcgMfurdKmOzhwHaFG&pid=Api&P=0&w=254&h=175" alt="" class="w-[200px] border-2 border-cyan-700 h-32" >
+              <img src="https://tse1.mm.bing.net/th?id=OIP.6BMXEzxS7XxqTNGs_qnzcgHaFD&pid=Api&P=0&w=261&h=178" alt="" class="w-[200px] border-2 border-cyan-700 h-32" >
+              <img src="https://tse3.mm.bing.net/th?id=OIP.TIa8BFuLUZB_vd43hSpXqwHaE7&pid=Api&P=0&w=241&h=161" alt="" class="w-[200px] border-2 border-cyan-700 h-32" >
+              <img src="https://tse1.mm.bing.net/th?id=OIP.W3gbGKFxlSWB9u-44MVb3AHaEK&pid=Api&P=0&w=301&h=169" alt="" class="w-[200px] border-2 border-cyan-700 h-32" >
+              <img src="https://tse1.mm.bing.net/th?id=OIP.zrrtLG3A8aAjcZBbZFRYcgHaE1&pid=Api&P=0&w=292&h=190" alt="" class="w-[200px] border-2 border-cyan-700 h-32" >
+              <img src="https://tse2.mm.bing.net/th?id=OIP.m7No3vMpdi_nUnMFD5YPSgAAAA&pid=Api&P=0&w=161&h=161" alt="" class="w-[200px] border-2 border-cyan-700 h-32" >
+
+            </div>
+          </div>
+        </article>
+      </section>
+
+
+      <!-- LTBT Facts -->
+      <section class="mt-10">
+        <div class="flex justify-center border-b-2 lg:border-dashed border-black w-[60%] m-auto">
+          <h1 class="text-5xl text-orange-400 font-bold mb-8">LTPT FACTS</h1>
+        </div><br>
+        <article>
+          <div class="flex justify-evenly ">
+            <img src="./a1.png" alt="" class="w-[180px] h-[180px]">
+            <img src="./a2.png" alt="" class="w-[180px] h-[180px]">
+            <img src="./a3.png" alt="" class="w-[180px] h-[180px]">
+            <img src="./a4.png" alt="" class="w-[180px] h-[180px]">
+            <img src="./a5.png" alt="" class="w-[180px] h-[180px]">
+          </div>
+        </article>
+      </section>
+
+      <!-- Contact Us -->
+<section class="mt-12 w-[95%] m-auto mb-4">
+  <div class="flex justify-center bg-gradient-to-r from-green-300 to-orange-300 animate-pulse rounded-lg">
+    <h1 class="font-bold text-4xl">Contact Us</h1>
+  </div>
+  </section>
+      <section class="flex justify-center">
+        <article class="w-[95%]">
+          <div class="flex justify-evenly">
+
+            <div class="w-[50%] h-[57vh] text-2xl modal-dialog">
+              <!-- <h1 class="text-center font-bold"> <span class="text-orange-400 font-bold">LTBT </span>- Location</h1> <br>
+              <iframe class="h-[48vh] m-auto rounded-lg shadow-2xl " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69331323984!2d-0.38178374385619773!3d51.528307967670855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1647233112262!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+              <h1 class="text-5xl text-gray-500" >Have a question ? <br>
+                Connect with us !
+              </h1> <br>
+              <div class="flex">
+                <svg class="w-6 h-6 relative top-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <a href="">&nbsp; info@ltbt.com</a>
+              </div>
+
+              <div class="flex">
+                <svg class="w-6 h-6 relative top-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                <a href="">&nbsp; 403 454 7009</a>
+              </div>
+
+              <div class="flex">
+                <svg class="w-6 h-6 relative top-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                <a href=""> &nbsp;200-3880 29 Street NE, Calgary, AB,T1Y</a>
+              </div>
+              <div >
+                <a href="" class="flex">
+                  <img src="./fb.png" alt="" class="w-10 h-10 m-2 rounded-lg">
+                  <img src="./insta.png" alt="" class="w-10 h-10 m-2 rounded-lg">
+                  <img src="./skype.png" alt="" class="w-10 h-10 m-2 rounded-lg">
+                </a>
+              </div>
+            </div>
+
+            <div class="w-[50%] ">
+              <div class="h-[50vh]">
+                <div class=" px-6 bg-white rounded-lg ">
+                    <h2 class="mb-4 text-xl antialiased font-semibold text-center text-gray-800 text-red-500">Submit an Enquiry</h2>
+                    <form class="mx-8 space-y-8">
+                        <div>
+                            <input type="text"
+                                class="w-full p-2 text-sm border-b-2 border-gray-400 outline-none opacity-50 focus:border-blue-400"
+                                placeholder="Full Name" />
+                        </div>
+                        <div>
+                            <input type="text"
+                                class="w-full p-2 text-sm border-b-2 border-gray-400 outline-none opacity-50 focus:border-blue-400"
+                                placeholder="Your Email" />
+                            <span class="text-xs text-red-600">Email field required</span>
+                        </div>
+                        
+                        <div>
+                            <textarea name="message"
+                                class="w-full p-3 text-sm border-b-2 border-gray-400 rounded-lg outline-none opacity-50 focus:border-blue-400"
+                                placeholder="Enter your message"></textarea>
+                        </div>
+            
+                        <button class="block w-full px-2 py-4 mt-2 text-white bg-black rounded-full">Send
+                            Form</button>
+                    </form>
+                </div>
+            </div>
+            </div>
+
+
+          </div>
+        </article>
+      </section>
+  </section>
+
+
+  <!-- Map -->
+  <section>
+    <div class="flex justify-center bg-gradient-to-r from-blue-300 to-white rounded-b-md animate-pulse rounded-lg">
+      <h1 class="font-bold text-4xl">Address</h1>
+    </div><br>
+    <article>
+      <div class="flex justify-evenly">
+
+        <div class="border-2 rounded-lg border-blue-900 drop-shadow-[0_35px_35px_rgba(67,83,89,0.7)]">
+          <iframe class="w-72 h-72 rounded-t-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497699.9974116273!2d77.35073287645798!3d12.953847713459588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1647242734380!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <h1 class="font-bold text-1xl text-center h-8  bg-gradient-to-r from-blue-300 to-white rounded-b-md">Bangalore Main Campus</h1>
+        </div>
+        <div class="border-2 rounded-lg border-blue-900 drop-shadow-[0_35px_35px_rgba(67,83,89,0.7)]">
+          <iframe class="w-72 h-72 rounded-t-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242118.1419990258!2d73.72287841211607!3d18.5245648579133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1647242790845!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h1 class="font-bold text-1xl text-center h-8  bg-gradient-to-r from-blue-300 to-white rounded-b-md">Pune main Campus</h1>
+        </div>
+        <div class="border-2 rounded-lg border-blue-900 drop-shadow-[0_35px_35px_rgba(67,83,89,0.7)]">
+          <iframe class="w-72 h-72 rounded-t-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d482634.69487777975!2d72.60098136078665!3d19.08203905948461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1647242813783!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h1 class="font-bold text-1xl text-center h-8  bg-gradient-to-r from-blue-300 to-white rounded-b-md" >Mumbai main Campus</h1>
+        </div>
+        <div class="border-2 rounded-lg border-blue-900 drop-shadow-[0_35px_35px_rgba(67,83,89,0.7)]">
+          <iframe class="w-72 h-72 rounded-t-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7861251.410048821!2d76.27712726500681!3d15.830209343567978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3546f8ae93d47f%3A0x33d1bbbe95adcd83!2sAndhra%20Pradesh!5e0!3m2!1sen!2sin!4v1647242842055!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h1 class="font-bold text-1xl text-center h-8  bg-gradient-to-r from-blue-300 to-white rounded-b-md">Hyderabad main Campus</h1>
+        </div>
+      </div>
+    </article>
+  </section><br>
+
+  <!-- Footer Part -->
+  <footer class="text-center text-white" style="background-color: #0a4275;">
+    <div class="container p-6">
+      <div class="">
+        <p class="flex justify-center items-center">
+          <span class="mr-4">Register for free</span>
+          <button type="button" class="inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded-full  focus:outline-none focus:ring-0 transition duration-150 ease-in-out hover:bg-green-400 hover:text-black">
+          <a href="./reg.html">Sign up!</a>
+          </button>
+        </p>
+      </div>
+    </div>
+  
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-white" href="https://tailwind-elements.com/"><span class="text-orange-400">LTBT</span> Academy</a>
+    </div>
+  </footer>
+
+
+
+   
+      
+
+
+<!--Dark Mode -->
+      <script>
+        function dark()
+        {
+          var m1=document.body;
+          m1.classList.toggle("dark-mode");
+        }
+      </script>
+  </body>
+
+
+
+  
+
+
+
+
+  <!-- Tailwind Elements JS -->
+  <script type="text/javascript" src="js/index.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+
+
+</html>
